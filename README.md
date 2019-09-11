@@ -85,6 +85,7 @@ Repositório de portfolio e currículo
 %\usetheme{Warsaw}
 
 
+
 % As well as themes, the Beamer class has a number of color themes
 % for any slide theme. Uncomment each of these in turn to see how it
 % changes the colors of your current slide theme.
@@ -129,17 +130,10 @@ Repositório de portfolio e currículo
 % letras riscadas em cima
 \usepackage[normalem]{ulem}
 \usepackage[colorlinks]{hyperref}
+\usefonttheme{serif}
 % -----------------------------------------------------
-% descomente essa seção para habilitar o logo da utfpr
-% (talvez o tamanho e o local devem ser alterados para
-% caber no cabeçalho)
-%
-% \addtobeamertemplate{frametitle}{}{%
-% \begin{textblock*}{100mm}(0.85\textwidth,-1.9cm)
-% \includegraphics[height=.1\textwidth]{./imagens/utfpr-logo.png}
-% \end{textblock*}
-% }
-% -----------------------------------------------------
+
+
 
 %%----------------------------------------------------------------------------------------
 %   TITLE PAGE
@@ -163,14 +157,11 @@ Repositório de portfolio e currículo
 %--------------------------------------
 \title[Apresentação do Portfólio]{Portfólio} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-
-
-
 \author[Rodrigo Hermont Ozon]{
 Rodrigo Hermont Ozon\\
 } % Your name
 
-\institute[UTFPR] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+\institute[UFPR] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
 Histórico de Entregas e Conquistas\\ % Your institution for the title page
 
@@ -218,11 +209,16 @@ Histórico de Entregas e Conquistas\\ % Your institution for the title page
 \begin{flushleft}
 
    \textit{Rodrigo Hermont Ozon, 36 anos, economista, ocupei os seguintes cargos}: 
+   
    \begin{itemize}
-       \item \textit{Data Scientist}
-       \item Coordenador de Projetos, Captação de Recursos
-       \item Pesquisador e Professor
-       \item Consultoria Econômica
+ 
+     \item<1-4> \textit{Data Scientist}
+
+     \item<2-4> Coordenador de Projetos, Captação de Recursos
+   
+     \item<3-4> Pesquisador e Professor
+
+   \item<4-4> Consultoria Econômica
    \end{itemize}
 
    
@@ -231,12 +227,15 @@ Histórico de Entregas e Conquistas\\ % Your institution for the title page
 \end{frame}
 
 %------------------------------------------------
-\subsection{Resumo dos serviços prestados}
+\subsection{Resumo dos cargos ocupados}
 
 \begin{frame}
 \frametitle{Resumo dos serviços prestados}
 
-Já trabalhei nas seguintes áreas: 
+\footnotesize
+Já trabalhei nas seguintes áreas:
+
+\small
 \begin{itemize}
     \item Mercado Financeiro
     \item Pesquisa científica
@@ -245,6 +244,7 @@ Já trabalhei nas seguintes áreas:
     \item Tecnologia (\textit{start up})
     \item Professor universitário
 \end{itemize}
+
 
 \end{frame}
 %------------------------------------------------
@@ -258,10 +258,10 @@ Como \textit{Data Scientist}:
 
 
 \begin{itemize}
-    \item<1-3> Construção de indicadores de perfomance (KPIs), indicadores de risco (KRIs), relatórios gerenciais dinâmicos em tempo real.
-    \item<2-3> Construção de \textit{dashboard} de visualização em tempo real (\textit{Business Intelligence}) de dados financeiros (ativos financeiros) e informações contábeis para a alta gestão 
-    \item<2-3> Visualização de dados estatísticos da economia paranaense (visão de cadeias produtivas industriais)
-    \item<3-3> Construção de Índice de Desenvolvimento Empresarial com base em dados secundários da economia;
+    \item<1-4> Construção de indicadores de perfomance (KPIs), indicadores de risco (KRIs), relatórios gerenciais dinâmicos em tempo real.
+    \item<2-4> Construção de \textit{dashboard} de visualização em tempo real (\textit{Business Intelligence}) de dados financeiros (ativos financeiros) e informações contábeis para a alta gestão 
+    \item<3-4> Visualização de dados estatísticos da economia paranaense (visão de cadeias produtivas industriais)
+    \item<4-4> Construção de Índice de Desenvolvimento Empresarial com base em dados secundários da economia;
 \end{itemize}
 
 \end{frame}
@@ -273,9 +273,9 @@ Como \textit{Data Scientist}:
 \footnotesize
 Como coordenador de projetos:
 \begin{itemize}
-\item Captação de recurso para execução do projeto 
-\item Submissão, planejamento e reprogramação de plano de projetos
-\item Fui avaliador dos projetos que as empresas submetiam ao edital Senai/Sesi de Inovação. Também fui avaliador no PAPPE/Subvenção parceria IBQP/Sebrae
+\item Trabalhei com captação de recursos para execução do projeto submetendo proposta a diversos órgãos de financiamento conforme suas exigências (geralmente editais/chamadas específicas) 
+\item Submissão, planejamento e reprogramação de plano de projetos (implantação de ferramental de gestão de projetos)
+\item Fui avaliador dos projetos que as empresas candidatavam ao edital Senai/Sesi de Inovação. Também fui avaliador no PAPPE/Subvenção parceria IBQP/Sebrae
 \item Professor de pós-graduação na FESP no MBA em Gerenciamento de Projetos na disciplina de Gerenciamento de Integração de Projetos metodologia PmBok/PMI
 \end{itemize}
 
@@ -284,16 +284,15 @@ Como coordenador de projetos:
 \begin{frame}
 \frametitle{Resumo dos serviços prestados}
 
-
+\footnotesize
 Como pesquisador, professor e consultor:
 
-\footnotesize
 \begin{itemize}
-    \item Fui pesquisador bolsista da Fundação Araucária e FIEP sobre cadeias produtivas industriais paranaenses, isso me deu \textit{know how} para trabalhar com estudos/pesquisa de mercado de alto nível quando fiz mestrado em desenvolvimento econômico
+    \item<1-3> Fui pesquisador bolsista da Fundação Araucária e FIEP sobre cadeias produtivas industriais paranaenses, isso me deu \textit{know how} para trabalhar com estudos/pesquisa de mercado de alto nível quando fiz mestrado em desenvolvimento econômico
     
-    \item Fui professor das disciplinas na graduação: Mercados Financeiros, Economia Monetária e Financeira, Métodos Quantitativos, Controle Estatístico de Processos, Administração Financeira, Indicadores de Desempenho da Indústria.  
+    \item<2-3> Fui professor das disciplinas na graduação: Mercados Financeiros, Economia Monetária e Financeira, Métodos Quantitativos, Controle Estatístico de Processos, Administração Financeira, Indicadores de Desempenho da Indústria.  
     
-    \item Como consultor viajei os estados brasileiros contribuindo para a implantação e melhoria do projeto ID-MPE (mais detalhes a seguir \textcolor{blue}{\ref{idmpe}}) para os Sebraes UF. Também faço consultoria econômica para empresas e pessoas físicas com planos de investimentos;
+    \item<3-3> Como consultor viajei os estados brasileiros contribuindo para a implantação e melhoria do projeto ID-MPE (mais detalhes a seguir \textcolor{blue}{\ref{idmpe}}) para os Sebraes UF. Também faço consultoria econômica para empresas e pessoas físicas com planos de investimentos;
 \end{itemize}
 
 \end{frame}
@@ -302,19 +301,21 @@ Como pesquisador, professor e consultor:
 \begin{frame}
 \frametitle{Projetos e trabalhos feitos}
 
+\footnotesize
 Consulte meus projetos que estão disponíveis na \textit{web}:
 
 Como \textit{Data Scientist}:
-\small
+
 \begin{itemize}
     \item<1-4> \textcolor{blue}{\href{http://www.leg.ufpr.br/doku.php/projetos:ehlers:volprev}{Modelagem de Volatilidade em Séries Financeiras (Laboratório de Estatística e Geoinformação/UFPR)}} 
     
-    \item<2-4> \textcolor{blue}{\href{https://rhoportolio.blogspot.com/2019/09/salarios-de-admissao-por-cargo.html}{Estudo de Mercado para parametrização salarial para contratação de profissionais}} 
+    \item<2-4> \textcolor{blue}{\href{https://rhoportolio.blogspot.com/2019/09/salarios-de-admissao-por-cargo.html}{Estudo de Mercado para parametrização salarial para contratação de profissionais (visualização feita em \textit{Power BI} com os microdados do CAGED/Min. Trabalho e Emprego)}} 
     
-    \item<2-4> \textcolor{blue}{\href{http://sites.pr.sebrae.com.br/leigeral/wp-content/uploads/sites/35/2014/02/Cartilha_IDMPE_PR_-_junho_2011.pdf}{Índice de Desenvolvimento Municipal das Micro e Pequenas Empresas (SEBRAE/IBQP)}}\label{idmpe}
-    \item<3-4> \textcolor{blue}{\href{http://sites.pr.sebrae.com.br/leigeral/wp-content/uploads/sites/35/2014/09/IDME_2013_web.pdf}{IDMPE (2012)}}
+    \item<3-4> \textcolor{blue}{\href{http://sites.pr.sebrae.com.br/leigeral/wp-content/uploads/sites/35/2014/02/Cartilha_IDMPE_PR_-_junho_2011.pdf}{Índice de Desenvolvimento Municipal das Micro e Pequenas Empresas, 2011 (SEBRAE/IBQP)}}\label{idmpe}
+    \item<4-4> \textcolor{blue}{\href{http://sites.pr.sebrae.com.br/leigeral/wp-content/uploads/sites/35/2014/09/IDME_2013_web.pdf}{IDMPE (edição 2009/2010 para Sebrae PR)\footnote{\tiny Pode se considerar aqui como \\ Data Scientist/Consultor e Coordenador de Projetos} }}
 \end{itemize}
 
+\pause *As demais publicações dos projetos descritos no meu LinkedIn não foram publicados na web por decisão de seus custeadores.
 
 \end{frame}
 %------------------------------------------------------------
@@ -324,56 +325,172 @@ Como \textit{Data Scientist}:
 \footnotesize
 Dos projetos que coordenei e executei e não estão disponíveis na \textit{web} destaco:
 \begin{itemize}
-    \item No Grupo Bitcoin Banco: Análise e Indicadores de Risco (área de atendimento para GBB), Automação dos relatórios de desempenho gerencial da área de atendimento do GBB, Indicador de Desempenho e Performance da Área de Atendimento GBB, Relatório \textit{realtime} dos dados do \textit{e-commerce} Get4Bit, Visualização de Dados do Setor de Compras do GBB (\href{https://www.linkedin.com/in/rodrigohermontozon/}{\textcolor{blue}{vide perfil no meu Linkedin)}}
-    \item Na FIEP: Fiz análises setoriais de cadeias produtivas industriais paranaenses, contribui para a \textcolor{blue}{\href{http://www.fiepr.org.br/para-empresas/estudos-economicos/sondagem-industrial-1-20654-238938.shtml}{Pesquisa de Sondagem Industrial}} e apoiei as negociações coletivas salariais de alguns sindicatos filiados. Também fiz captação de recursos submetendo projetos a instituições de financiamento como Banco do Brasil, FINEP, PNUD/ONu etc.
-    \item No \textcolor{blue}{\href{http://ibqp.org.br/}{IBQP}} além do IDMPE fui voluntário/avaliador do \textcolor{blue}{\href{http://www.ibqp.org.br/projetos/movimento-parana-competitivo/sobre-mpc/}{Movimento Paraná Competitivo}} da \textcolor{blue}{\href{http://www.fnq.org.br/}{}Fundação Nacional da Qualidade}} 
+    \item<1-3> No Grupo Bitcoin Banco (GBB): Análise e Indicadores de Risco (área de atendimento para GBB), Automação dos relatórios de Desempenho Gerencial da área de Atendimento do GBB; Indicador de Desempenho e Performance da Área de Atendimento GBB; Relatório \textit{realtime} dos dados do \textit{e-commerce} Get4Bit oriundos do \textit{Google Analitycs}; Visualização de Dados do Setor de Compras do GBB (\href{https://www.linkedin.com/in/rodrigohermontozon/}{\textcolor{blue}{vide perfil no meu Linkedin)}}\footnote{\tiny Dados confidenciais e utilizados somente para divulgação interna.}
+    \item<2-3> Na FIEP: Fiz análises setoriais de cadeias produtivas industriais paranaenses, contribui para a \textcolor{blue}{\href{http://www.fiepr.org.br/para-empresas/estudos-economicos/sondagem-industrial-1-20654-238938.shtml}{Pesquisa de Sondagem Industrial}} e apoiei as negociações coletivas salariais de alguns sindicatos filiados. Também fiz captação de recursos submetendo projetos a instituições de financiamento como Banco do Brasil, FINEP, PNUD/ONu etc.
+    \item<3-3> No \textcolor{blue}{\href{http://ibqp.org.br/}{IBQP}} além do IDMPE fui voluntário/avaliador do \textcolor{blue}{\href{http://www.ibqp.org.br/projetos/movimento-parana-competitivo/sobre-mpc/}{Movimento Paraná Competitivo}} da \textcolor{blue}{\href{http://www.fnq.org.br/}{Fundação Nacional da Qualidade}} 
 \end{itemize}
 
 
 
 \end{frame}
 %-------------------------------------------------
+\section{Perfis Públicos (posts) de meus trabalhos}
 \begin{frame}
 \frametitle{Perfis Públicos}
 
+\footnotesize
 Acesse minhas publicações (visualizações de dados e linhas de códigos) nos seguintes endereços:
 
-\small
+
 \begin{itemize}
-    \item No GitHub: \textcolor{blue}{\href{https://github.com/rhozon}{https://github.com/rhozon}}
+    \item No GitHub: \textcolor{blue}{\href{https://github.com/rhozon}{https://github.com/rhozon (aqui está disponível este portfolio na linguagem \LaTeX \hspace{.05cm} utilizando o pacote Beamer)}}
     \item Na galeria do Tableau Public: \textcolor{blue}{\href{https://public.tableau.com/profile/rodrigo.h.ozon#!/}{https://public.tableau.com/profile/rodrigo.h.ozon#!/}}
     \item Protótipo de visualização de dados para a FIEP: \textcolor{blue}{\href{http://fiepdesenvolvimento.blogspot.com/}{http://fiepdesenvolvimento.blogspot.com/}}
 \end{itemize}
 
+
 \end{frame}
 %------------------------------------------------------------
+\section{Habilidades e know how}
+\begin{frame}
+\frametitle{Formação Acadêmica}
+
+\footnotesize
+\begin{itemize}
+    \item \textcolor{blue}{\href{http://uniaodavitoria.unespar.edu.br/ensino/graduacao/matematica}{Licenc. e Hab. Plena em Matemática pela Universidade Estadual do Paraná (2003)}} 
+    \item \textcolor{blue}{\href{http://www.economia.ufpr.br/}{Bacharel em Ciências Econômicas pela Universidade Federal do Paraná (2008)}}
+    \item \textcolor{blue}{\href{http://www.sociaisaplicadas.ufpr.br/portal/depecon/pos-graduacao/}{Mestre em Desenvolvimento Econômico pela UFPR (2011)}}
+    \item \textcolor{blue}{\href{https://www.fatemi.com.br/}{Teologia Ministerial (FATEMI/UNICESUMAR) (2020)}}
+    \item \textcolor{blue}{\href{https://universidade.up.edu.br/pos-graduacao/programa-de-especializacao-docente-no-ensino-da-ciencias/}{Especialização em Estratégias de Ensino e Aprendizagem na Educação Superior (Universidade Positivo trancado em 2010)}}
+\end{itemize}
 
 
+\end{frame}
+%----------------------------------------------------------------
 
 
-%------------------------------------------------
+%----------------------------------------------------------
+
+\begin{frame}
+\frametitle{Certificações}
+
+\footnotesize
+\begin{itemize}
+    \item Certificação profissional em Ciência de Dados pela IBM (em conclusão até dez/2019) 
+    
+    
+    \item Capelania Assistencial pela Cruz Vermelha Internacional
+\end{itemize}
+
+\end{frame}
+%---------------------------------------------------------
+\begin{frame}
+\frametitle{Principais cursos}
+
+\footnotesize
+\begin{itemize}
+    \item Econometria Básica Aplicada pela USP (2019)
+    \item \textit{Bitcoin and CryptoCurrency Technologies} pela Universidade de Princeton (2019)
+    \item \textcolor{blue}{\textit{Experimentando com o \href{https://www.ufpr.br/portalufpr/eventos/curso-de-extensao-economia-e-complexidade-modelagem-baseada-em-agentes-com-lsd-sera-promovido-de-17-a-19-de-julho/}{Laboratory for Simulation Dynamics}, fronteiras e perspectivas} (UFPR)} (2009)
+    \item Indicadores de Gestão pelo IBQP (2010)
+    \item Modelos Matemáticos em finanças I e II pela UFPR (2008)
+    \item Instrumentos Financeiros Aplicados à Decisões de Mercado (2005)
+    \item Softwares Livres de Gestão pelo IBQP (2008)
+\end{itemize}
+*Para consultar todos os cursos feitos, \textcolor{blue}{\href{http://lattes.cnpq.br/3532649625879285}{consulte meu CV na Plataforma Lattes do CNPq}}
+
+\end{frame}
+%----------------------------------------------------------------
+
+\begin{frame}{Produção Científica}
+
+\footnotesize
+\textcolor{blue}{\href{http://lattes.cnpq.br/3532649625879285}{Segundo os indicadores de produtividade do CNPq, conforme a Plataforma Lattes, detenho os seguintes resultados:}}
+\begin{itemize}
+    \item \textbf{1} Artigo completo publicado em periódico
+    \item \textbf{1} Livro publicado/organizado ou edições
+    \item \textbf{13} Textos em jornais de notícias/revistas
+    \item \textbf{1} Artigo aceito para publicação
+    \item \textbf{2} Apresentações de trabalhos
+    \item \textbf{1} Outras publicações bibliográficas
+    \item \textbf{1} Assessoria/consultoria parecerista
+    \item \textbf{3} Trabalhos técnicos
+    \item \textbf{15} Demais tipos de produção técnica
+    \item \textbf{1} Participação em bancas de comissões julgadoras 
+    \item \textbf{1} Participação em eventos, congressos, exposições e feiras
+    \item \textbf{5} Orientações e supervisões em andamento
+    \item \textbf{1} Capitulo de livro escrito \textcolor{blue}{\href{http://ibqp.org.br/wp-content/uploads/2016/10/Empreendedorismo-no-Brasil-2011-Relat\%C3\%83\%C2\%B3rio.pdf}{(Pesquisa \textit{Global Enterpreneuship Monitor (GEM))}}}
+\end{itemize}
+    
+\end{frame}
+%------------------------------------------------------------
+%----------------------------------------------------------------
+
+\begin{frame}{Conhecimentos Computacionais}
+\footnotesize
+Linguagens:
+\begin{itemize}
+    \item \textcolor{blue}{\href{http://www.leg.ufpr.br/~paulojus/embrapa/Rembrapa/Rembrapase35.html}{LaTeX+R (Sweave)}}, VBA (Excel), SQL, LaTeX2HTML, Matlab, Stata, SPSS, Eviews
+\end{itemize}
+
+Bibliotecas e frameworks:
+\begin{itemize}
+    \item Matplotlib, Gnuplot, GeoGebra e Data.table
+\end{itemize}
+
+Ferramentas e Plataformas
+\begin{itemize}
+    \item Microsoft Power BI, Tableau Public, Power Point, AWS, Data Studio, Git e Github, RStudio, Visual Studio, Excel
+\end{itemize}
+Armazenamento de dados, infraestrutura e cloud
+\begin{itemize}
+    \item SQL Server, MySQL, Oracel, JSON, Azure
+\end{itemize}
+Atividades e Conceitos
+\begin{itemize}
+\item ETL, criação de webcrawler, processamento em tempo real, modelagem de banco de dados, visualização de dados, arquitetura de dados, estatísticas, formalismo e modelagem matemática, teste AB
+\end{itemize}
+
+\end{frame}
+%-------------------------------------------------------
+
+
+%------------------------------------------------.
+
+\section{Contato}
 \begin{frame}
 \frametitle{Contato}
 
-\textit{\textcolor{blue}{\href{https://api.whatsapp.com/send?phone=5541988382904&text=Ol\%C3\%A1\%20Rodrigo\%2C\%20vi\%20seu\%20portf\%C3\%B3lio\%20no\%20linkedin\%2C\%20tenho\%20interesse\%20em\%20conhecer\%20um\%20pouco\%20mais\%20do\%20seu\%20trabalho.\%20Podemos\%20conversar\%20a\%20respeito\%20\%3F}{Me adicione no whatsapp}}} \small{+55 41 98838-2904}
+\begin{columns}[t]
+\begin{column}{5cm}
+
+
+\textit{\textcolor{blue}{\href{https://api.whatsapp.com/send?phone=5541988382904&text=Ol\%C3\%A1\%20Rodrigo\%2C\%20vi\%20seu\%20portf\%C3\%B3lio\%20no\%20linkedin\%2C\%20tenho\%20interesse\%20em\%20conhecer\%20um\%20pouco\%20mais\%20do\%20seu\%20trabalho.\%20Podemos\%20conversar\%20a\%20respeito\%20\%3F}{Me adicione no whatsapp:}}}
+
 
 \vspace{.5cm}
-Endereço de e-mail: \textit{\textcolor{blue}{\href{mailto:rodrigoozon@yahoo.com.br}{rodrigoozon@yahoo.com.br}}} \\ % Your email address
+
+\textit{\textcolor{blue}{\href{https://api.whatsapp.com/send?phone=5541988382904&text=Ol\%C3\%A1\%20Rodrigo\%2C\%20vi\%20seu\%20portf\%C3\%B3lio\%20no\%20linkedin\%2C\%20tenho\%20interesse\%20em\%20conhecer\%20um\%20pouco\%20mais\%20do\%20seu\%20trabalho.\%20Podemos\%20conversar\%20a\%20respeito\%20\%3F}{+55 41 98838-2904}}} 
 
 
+\end{column}
+\begin{column}{5cm}
+
+\textit{\textcolor{blue}{\href{mailto:rodrigoozon@yahoo.com.br}{Me envie e-mail:}}}
+
+\vspace{.5cm}
+\textit{\textcolor{blue}{\href{mailto:rodrigoozon@yahoo.com.br}{rodrigoozon@yahoo.com.br}}} \\
+
+\end{column}
+\end{columns}
 
 \end{frame}
 
 %----------------------------------------
-%\section{Referências}
-
-%\begin{frame}[allowframebreaks]{Outline}
-%\frametitle{Referências}
-%\bibliography{referencias}
-%\end{frame}
-
-%------------------------------------------------
 
 
-%----------------------------------------------------------------------------------------
+
+
+%------------------------------------------------------------
 \end{document}
+
