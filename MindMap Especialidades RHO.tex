@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lscape}
+\usepackage{tikz}
+\usetikzlibrary{mindmap}
+\pagestyle{empty}
+%=============================================================
+
+
+%=============================================================
+
+\title{\textit{MindMap} Rodrigo H. Ozon: Minhas áreas de especialidade}
+\author{Rodrigo Hermont Ozon}
+\date{Outubro 2019}
+\thispagestyle{empty}
+
+%=============================================================
+\begin{document}
+%=============================================================
+\maketitle
+%============================================================
+
+\begin{tikzpicture}[grow cyclic, text width=2.7cm, align=flush center,
+	level 1/.style={level distance=5cm,sibling angle=90},
+	level 2/.style={level distance=3cm,sibling angle=45}]
+	
+
+\node{Especialidades}
+child { node {Econometria}
+	child { node {Análise Fatorial, Multivariada}}
+%	child { node {Análise de Séries Temporais}}
+	child { node {Modelos de Predição e Previsão (Machine Learning)}}
+%	child { node {Modelos de Probabilidade (Probit, Tobit e Logit)}}
+	child { node {Modelos de Probabilidade (Probit, Tobit e Logit)}}
+%	child { node {Tables and Matrices}}
+	child { node {Análise de Séries Temporais}}
+}
+child { node {Bancos de Dados}
+	child { node {Fluxo de informações}}
+	child { node {Extração}}
+	child { node {Modelagem de Banco de Dados}}
+	child { node {Estatísticas Descritivas e Análise Preliminar}}
+%	child { node {Title Page}}
+}
+child { node {Pesquisa de Mercado}
+	child { node {Microeconometria}}
+	child { node {Estudos de Mercado \textit{data driven}}}
+	child { node {Construção de cenários de competividade}}
+	child { node {API Google Analitycs para \textit{e-commerces}}}
+%	child { node {Themes and Handouts}}
+}
+child { node {Finanças e Tecnologia}
+	child { node {Rastreabilidade via \textit{blockchain}}}
+	child { node {Estratégia de investimentos em criptoativos}}
+	child { node {Otimização de Portfólio, \textit{forecast} de preços}}
+	child { node {Análise de Viabilidade Econômico Financeira}}
+	child { node {Auditoria com Data Science}}
+};
+\end{tikzpicture}
+
+\begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=orange!40, 
+	level 1/.append style={level distance=5cm,sibling angle=90},
+	level 2/.append style={level distance=3cm,sibling angle=45},]
+	\node{Especialidades}
+child { node {Econometria}
+	child { node {Análise Fatorial, Multivariada}}
+%	child { node {Análise de Séries Temporais}}
+	child { node {Modelos de Predição e Previsão (Machine Learning)}}
+%	child { node {Modelos de Probabilidade (Probit, Tobit e Logit)}}
+	child { node {Modelos de Probabilidade (Probit, Tobit e Logit)}}
+%	child { node {Tables and Matrices}}
+	child { node {Análise de Séries Temporais}}
+}
+child { node {Bancos de Dados}
+	child { node {Fluxo de informações}}
+	child { node {Extração}}
+	child { node {Modelagem de Banco de Dados}}
+	child { node {Estatísticas Descritivas e Análise Preliminar}}
+%	child { node {Title Page}}
+}
+child { node {Pesquisa de Mercado}
+	child { node {Micro econometria}}
+	child { node {Estudos de Mercado \textit{data driven}}}
+	child { node {Avaliação de cenários de competividade}}
+	child { node {API Google Analitycs para e-commerces}}
+%	child { node {Themes and Handouts}}
+}
+child { node {Finanças e Tecnologia}
+	child { node {Rastr. via blockchain}}
+	child { node {Estratégia de investimentos em criptoativos}}
+	child { node {Otimização de Portfólio, \textit{forecast} de preços}}
+	child { node {Análise de Viabilidade Econômico Financeira}}
+	child { node {Auditoria com Data Science}}
+};
+\end{tikzpicture}
+
+	
+
+
+%=============================================================	
+\end{document}
+%=============================================================	
